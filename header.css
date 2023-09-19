@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@600&display=swap');
+.tooltikk{
+    display: inline-block;
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+    position: absolute;
+    height: 3.2vh;
+    width: 7.2vw;
+    font-size: 2vh;
+    text-align: center;
+    visibility: hidden;
+}
+@media only screen and (max-width: 1040px){
+    .tooltikk{
+        height:0;
+        width: 0;
+        font-size: 0;
+        border: none;
+    }    
+}
+@media only screen and (max-height: 371px){
+    .tooltikk{
+        height:0;
+        width: 0;
+        font-size: 0;
+        border: none;
+    }    
+}
+#ttext3{
+    top: 5vh;
+    left: 73.3vw;
+}
+#ttext2{
+    top: 5vh;
+    left: 65.2vw;
+}
+#ttext1{
+    top: 5vh;
+    left: 57.5vw;
+}
+.navigation{
+    width: 100vw;
+    height:5vh;
+}
+nav{
+    list-style: none;
+    letter-spacing: 1px;
+    height: 100%;
+    margin-left: 20vw;
+    width:calc(100vw - 40vw);
+    background-color: #333;
+}
+.navigation>nav>li>a{
+    text-decoration: none;
+    color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.8vh;
+    transition: 1s;
+    font-size: 2.65vh;
+}
+/* hovering home button */
+#no1:hover{
+    background-color: black;
+    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 6px white;
+}
+.home:hover #ttext1{
+    visibility: visible;
+}
+/* hovering check button */
+#no2:hover{
+    background-color: black;
+    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 6px white;
+}
+.check:hover #ttext2{
+    visibility: visible;
+}
+/* hovering about button */
+#no3:hover{
+    background-color: black;
+    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 6px white;
+}
+.about:hover #ttext3{
+    visibility: visible;
+}
+.navigation>nav>li{
+    display: flex;
+    color: white;
+    float: right;
+}
+#name{
+    float: left;
+    font-family: 'Caveat', cursive;
+    font-size: 4vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-shadow: 0 0 2px white, 0 0 4px lightpink;
+}

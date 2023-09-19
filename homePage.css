@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@600&display=swap');
+.content{
+    position:absolute;
+    height: 85vh;
+    margin-left: 20vw;
+    width:calc(100vw - 40vw);
+    background-color: rgb(230, 227, 227);
+    z-index: -1;
+    border-left: solid 1px;
+    border-right: solid 1px;
+}
+#title{
+    font-family: 'Caveat', cursive;
+    position:relative;
+    top: 8vh;
+    left: 6vw;
+    font-size: 10vh;
+    text-shadow: 3px 7px 7px;
+    color: blue;
+}
+.message1{
+    position:relative;
+    height: 27vh;
+    width:60vh;
+    top: 11vh;
+    left: 2.1vw;
+}
+#message1-1{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 5vh;
+    text-shadow: 0 0 2px black;
+}
+.message2{
+    position: relative;
+    height: 10vh;
+    width: 15vw;
+    top: 15vh;
+    left: 7.2vw;
+    text-align: center;
+}
+#buttonh{
+    position: relative;
+    top: 13vh;
+    left: 12vw;
+    width: 6vw;
+    height:6vh;
+    font-size: 2.5vh;
+}
+#buttonh a{
+    text-decoration: none;
+}
+#buttonh:hover{
+    background-color: #7877bd;
+}
+#buttonh:hover a{
+    color: white;
+}
+.carausel1{
+    position:absolute;
+    width:30vw;
+    height: auto;
+    top: 42.4vh;
+    left: 29.9vw;
+}
+#bg2{
+    position:absolute;
+    width:30vw;
+    height: auto;
+    top: 2vh;
+    left:29.9vw;
+}
