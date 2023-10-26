@@ -3,11 +3,11 @@ const app=express()
 const hbs=require("hbs")
 const path=require("path")
 const port=8000
-const viewPath=path.join(__dirname,"../templates/views")
-const partialPath=path.join(__dirname,"../templates/partials")
-const staticPathcSS=path.join(__dirname,"../css")
-const staticPathImage=path.join(__dirname,"../images")
-const staticPathJS=path.join(__dirname,"../script")
+const viewPath=path.join(__dirname,"./templates/views")
+const partialPath=path.join(__dirname,"./templates/partials")
+const staticPathcSS=path.join(__dirname,"./css")
+const staticPathImage=path.join(__dirname,"./images")
+const staticPathJS=path.join(__dirname,"./script")
 
 app.set("views",viewPath)
 app.set("view engine","hbs")
@@ -17,15 +17,15 @@ app.use("/script",express.static(staticPathJS))
 hbs.registerPartials(partialPath)
 
 app.get("/",(req,res)=>{
-    res.render("home")
+    res.status(200).render("home")
 })
 
 app.get("/about",(req,res)=>{
-    res.render("about")
+    res.status(200).render("about")
 })
 
 app.get("/check",(req,res)=>{
-    res.render("check")
+    res.status(200).render("check")
 })
 
 app.get("*",(req,res)=>{
